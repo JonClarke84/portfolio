@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { Link } from "react-router";
 
 interface ProjectCardProps {
   title: string;
@@ -62,16 +63,29 @@ export default function ProjectCard({
             ))}
           </div>
           {caseStudyUrl && (
-            <a
-              className={`inline-flex items-center gap-2 text-primary font-button hover:underline ${focusRingClass}`}
-              href={caseStudyUrl}
-              aria-label={`Read case study for ${title}`}
-            >
-              Case Study{" "}
-              <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
-                open_in_new
-              </span>
-            </a>
+            caseStudyUrl.startsWith("/") ? (
+              <Link
+                className={`inline-flex items-center gap-2 text-primary font-button hover:underline ${focusRingClass}`}
+                to={caseStudyUrl}
+                aria-label={`Read case study for ${title}`}
+              >
+                Case Study{" "}
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+                  open_in_new
+                </span>
+              </Link>
+            ) : (
+              <a
+                className={`inline-flex items-center gap-2 text-primary font-button hover:underline ${focusRingClass}`}
+                href={caseStudyUrl}
+                aria-label={`Read case study for ${title}`}
+              >
+                Case Study{" "}
+                <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+                  open_in_new
+                </span>
+              </a>
+            )
           )}
         </div>
       </article>

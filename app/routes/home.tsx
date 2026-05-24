@@ -23,7 +23,7 @@ const projects = {
       "https://lh3.googleusercontent.com/aida-public/AB6AXuArvjj7lneDfHOptyljEvGiTNfAMBbQICSYdy5GmZnrVPGuPvG0IPz4uN-VTJ2CYCLCzpc5l6RyK_JZPp36szc_6l5WpjFrEIuK3jODivV6mJE_Ul5ekn6zPVyu-KebDryEvyf0dqfdOH_YdeUUK5-vyqwAB_9NZIB5zBsUDiBA5ZdsPJccLP1K390rdJHLzYRSv7U2zIIcjw_38W9l3iFVIW8vNJjLIhbUBsKgq0meQLhkk-x-JHseP8lNGw2yOO_zojB8fb4SkBI",
     tags: ["React", "Next.js", "Redux", "Node.js"],
     labels: ["COMMERCIAL", "LEAD FRONTEND"],
-    caseStudyUrl: "#",
+    caseStudyUrl: "/booking-engine",
   },
   secondary: [
     {
