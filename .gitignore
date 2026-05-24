@@ -1,0 +1,14 @@
+.DS_Store
+.env
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+# Tooling
+.antigravitycli
+/temp-portfolio-app
+
+# Kamal Secrets
+.kamal/secrets

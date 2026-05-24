@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Brand Typography Fonts */
+  --font-display-xl: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-label-sm: "JetBrains Mono", monospace;
+  --font-button: "Inter", sans-serif;
+
+  /* Custom Spacings */
+  --spacing-container-max: 1200px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 16px;
+  --spacing-section-gap: 120px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+
+  /* Brand Colors */
+  --color-primary: #006c4d;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #12b886;
+  --color-on-primary-container: #00412d;
+  --color-inverse-primary: #50dea9;
+  
+  --color-secondary: #595f65;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dde3eb;
+  --color-on-secondary-container: #5f656c;
+  
+  --color-tertiary: #5c5f60;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #a0a2a3;
+  --color-on-tertiary-container: #36393a;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  
+  --color-background: #f6faff;
+  --color-on-background: #141d23;
+  
+  --color-surface: #f6faff;
+  --color-surface-dim: #d2dbe4;
+  --color-surface-bright: #f6faff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #ecf5fe;
+  --color-surface-container: #e6eff8;
+  --color-surface-container-high: #e0e9f2;
+  --color-surface-container-highest: #dbe4ed;
+  --color-on-surface: #141d23;
+  --color-on-surface-variant: #3c4a42;
+  --color-inverse-surface: #293138;
+  --color-inverse-on-surface: #e9f2fb;
+  --color-surface-variant: #dbe4ed;
+  --color-surface-tint: #006c4d;
+  
+  --color-outline: #6c7a72;
+  --color-outline-variant: #bbcac0;
+}
+
+/* Custom Text Style Utilities */
+@utility text-display-xl {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@utility text-headline-lg {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+@utility text-headline-lg-mobile {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+@utility text-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@utility text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility text-label-sm {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+@utility text-button {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+/* Layout Utilities */
+@utility bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+@utility work-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 20px 40px rgba(0, 108, 77, 0.08);
+  }
+}
+
+@utility ambient-shadow {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Material Icons Integration styling */
+@utility material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: 'Material Symbols Outlined', sans-serif;
+}
+
+html,
+body {
+  background-color: #f6faff;
+  color: #141d23;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
