@@ -23,9 +23,10 @@ describe("Video Route Page", () => {
     expect(screen.getByText("Founded internal unit from scratch")).toBeInTheDocument();
     expect(screen.getByText("Legoland Windsor Freelance Producer (2020)")).toBeInTheDocument();
 
-    // Featured Videos
-    expect(screen.getByText("The Ultimate Guide to Airport Parking")).toBeInTheDocument();
-    expect(screen.getByText("How to Save Money on Your Next Holiday")).toBeInTheDocument();
+    // Featured Videos with new metadata
+    expect(screen.getByText("Tokyo Travel Guide | Travel better in JAPAN!")).toBeInTheDocument();
+    expect(screen.getByText("48 Hours in Budapest | ULTIMATE BUDAPEST TRAVEL GUIDE")).toBeInTheDocument();
+    expect(screen.getByText("The most BEAUTIFUL country on Earth? | THAILAND cinematic travel")).toBeInTheDocument();
 
     // Visual Storytelling
     expect(screen.getByText("Visual Storytelling")).toBeInTheDocument();
