@@ -1,6 +1,7 @@
 import type { Route } from "./+types/video";
 import { Link } from "react-router";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -100,79 +101,45 @@ export default function Video() {
             </div>
           </section>
 
-          {/* Featured Video 1 */}
-          <a 
-            href="#"
-            aria-label={`Play video: ${videos[0].title}`}
-            className={`md:col-span-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg ambient-shadow overflow-hidden group cursor-pointer relative block ${focusRingClass}`}
-          >
-            <div className="aspect-video w-full bg-surface-variant relative">
-              <img
-                alt=""
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                src={videos[0].image}
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors duration-300">
-                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span
-                    className="material-symbols-outlined text-primary text-[32px] ml-1"
-                    data-weight="fill"
-                    aria-hidden="true"
-                  >
-                    play_arrow
-                  </span>
+          {/* Featured Videos */}
+          {videos.map((video, idx) => (
+            <a 
+              key={idx}
+              href="#"
+              aria-label={`Play video: ${video.title}`}
+              className={`md:col-span-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg ambient-shadow overflow-hidden group cursor-pointer relative block ${focusRingClass}`}
+            >
+              <div className="aspect-video w-full bg-surface-variant relative">
+                <img
+                  alt=""
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                  src={video.image}
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors duration-300">
+                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <span
+                      className="material-symbols-outlined text-primary text-[32px] ml-1"
+                      data-weight="fill"
+                      aria-hidden="true"
+                    >
+                      play_arrow
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="p-6">
-              <div className="inline-block bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full mb-3">
-                {videos[0].channel}
-              </div>
-              <h3 className="font-headline-md text-headline-md text-on-surface mb-2">
-                {videos[0].title}
-              </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-secondary">
-                {videos[0].description}
-              </p>
-            </div>
-          </a>
-
-          {/* Featured Video 2 */}
-          <a 
-            href="#"
-            aria-label={`Play video: ${videos[1].title}`}
-            className={`md:col-span-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg ambient-shadow overflow-hidden group cursor-pointer relative block ${focusRingClass}`}
-          >
-            <div className="aspect-video w-full bg-surface-variant relative">
-              <img
-                alt=""
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                src={videos[1].image}
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors duration-300">
-                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span
-                    className="material-symbols-outlined text-primary text-[32px] ml-1"
-                    data-weight="fill"
-                    aria-hidden="true"
-                  >
-                    play_arrow
-                  </span>
+              <div className="p-6">
+                <div className="inline-block bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full mb-3">
+                  {video.channel}
                 </div>
+                <h3 className="font-headline-md text-headline-md text-on-surface mb-2">
+                  {video.title}
+                </h3>
+                <p className="font-body-md text-body-md text-on-surface-variant text-secondary">
+                  {video.description}
+                </p>
               </div>
-            </div>
-            <div className="p-6">
-              <div className="inline-block bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full mb-3">
-                {videos[1].channel}
-              </div>
-              <h3 className="font-headline-md text-headline-md text-on-surface mb-2">
-                {videos[1].title}
-              </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant text-secondary">
-                {videos[1].description}
-              </p>
-            </div>
-          </a>
+            </a>
+          ))}
 
           {/* Visual Storytelling Card */}
           <article 
@@ -199,39 +166,7 @@ export default function Video() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto mt-section-gap border-t border-outline-variant/20 bg-surface">
-        <div className="font-headline-md text-headline-md font-bold text-on-surface mb-4 md:mb-0">
-          JC.DEV
-        </div>
-        <div className="text-on-surface-variant font-body-md text-body-md mb-4 md:mb-0 text-center md:text-left text-secondary">
-          © 2024 Jonathan Clarke. Built with{" "}
-          <Link to="/about-portfolio" className="underline hover:text-primary transition-colors">
-            precision
-          </Link>
-          .
-        </div>
-        <div className="flex space-x-6">
-          <a
-            className={`text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors transition-opacity hover:opacity-80 text-secondary ${inlineFocusRingClass}`}
-            href="#"
-          >
-            LinkedIn
-          </a>
-          <a
-            className={`text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors transition-opacity hover:opacity-80 text-secondary ${inlineFocusRingClass}`}
-            href="#"
-          >
-            GitHub
-          </a>
-          <a
-            className={`text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors transition-opacity hover:opacity-80 text-secondary ${inlineFocusRingClass}`}
-            href="#"
-          >
-            Source Code
-          </a>
-        </div>
-      </footer>
+      <Footer precisionText="precision" />
     </>
   );
 }

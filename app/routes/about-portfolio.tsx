@@ -1,6 +1,7 @@
 import type { Route } from "./+types/about-portfolio";
 import { Link } from "react-router";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -303,48 +304,7 @@ proxy:
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-surface-container-low border-t border-outline-variant/20 py-stack-lg">
-        <div className="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto">
-          <div className="mb-8 md:mb-0">
-            <a
-              className={`font-headline-md text-headline-md font-bold text-primary mb-2 block ${inlineFocusRingClass}`}
-              href="#"
-            >
-              JC.DEV
-            </a>
-            <p className="text-secondary-fixed-variant font-body-md max-w-xs">
-              © 2024 Jonathan Clarke.{" "}
-              <Link to="/about-portfolio" className="underline hover:text-primary transition-colors">
-                Built with technical precision.
-              </Link>
-            </p>
-          </div>
-          <div className="flex gap-8">
-            <a
-              className={`text-secondary-fixed-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 flex items-center gap-2 ${inlineFocusRingClass}`}
-              href="#"
-            >
-              <span className="material-symbols-outlined text-xl" aria-hidden="true">share</span>{" "}
-              GitHub
-            </a>
-            <a
-              className={`text-secondary-fixed-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 flex items-center gap-2 ${inlineFocusRingClass}`}
-              href="#"
-            >
-              <span className="material-symbols-outlined text-xl" aria-hidden="true">link</span>{" "}
-              LinkedIn
-            </a>
-            <a
-              className={`text-secondary-fixed-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 flex items-center gap-2 ${inlineFocusRingClass}`}
-              href="#"
-            >
-              <span className="material-symbols-outlined text-xl" aria-hidden="true">podcasts</span>{" "}
-              Twitter
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

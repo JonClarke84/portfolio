@@ -1,6 +1,7 @@
 import type { Route } from "./+types/booking-engine";
 import { Link } from "react-router";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -132,33 +133,7 @@ export default function BookingEngine() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto mt-section-gap border-t border-outline-variant/20 bg-surface">
-        <div className="font-headline-md text-headline-md font-bold text-on-surface mb-4 md:mb-0">
-          JC.DEV
-        </div>
-        <div className="text-on-surface-variant font-body-md text-body-md mb-4 md:mb-0 text-center md:text-left text-secondary">
-          © 2024 Jonathan Clarke. Built with{" "}
-          <Link to="/about-portfolio" className="underline hover:text-primary transition-colors">
-            agentic precision
-          </Link>
-          .
-        </div>
-        <div className="flex space-x-6">
-          <a
-            className={`text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors transition-opacity hover:opacity-80 text-secondary ${inlineFocusRingClass}`}
-            href="#"
-          >
-            LinkedIn
-          </a>
-          <a
-            className={`text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors transition-opacity hover:opacity-80 text-secondary ${inlineFocusRingClass}`}
-            href="#"
-          >
-            GitHub
-          </a>
-        </div>
-      </footer>
+      <Footer precisionText="agentic precision" />
     </>
   );
 }
