@@ -30,7 +30,7 @@ describe("AboutPortfolio Route Page", () => {
     expect(screen.getByRole("heading", { name: /Refactor/i })).toBeInTheDocument();
 
     // Assert Kamal deploy details are shown (multiple occurrences are expected)
-    expect(screen.getAllByText(/68.183.32.103/)[0]).toBeInTheDocument();
+    expect(screen.getAllByText(/xx\.xxx\.xx\.xxx/)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/portfolio.jonathanclarke.dev/)[0]).toBeInTheDocument();
   });
 });

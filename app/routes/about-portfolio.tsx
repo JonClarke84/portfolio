@@ -258,7 +258,7 @@ export default function AboutPortfolio() {
                 <div className="bg-surface-container p-6 rounded-xl space-y-4">
                   <h4 className="font-headline-md text-headline-md text-base text-on-surface">DigitalOcean Target Environment</h4>
                   <ul className="space-y-2 text-sm text-secondary list-disc list-inside font-body-md">
-                    <li>Droplet IP: <code className="bg-surface-container-lowest px-1.5 py-0.5 rounded text-primary">68.183.32.103</code></li>
+                    <li>Droplet IP: <code className="bg-surface-container-lowest px-1.5 py-0.5 rounded text-primary">xx.xxx.xx.xxx</code></li>
                     <li>Domain Name: <code className="bg-surface-container-lowest px-1.5 py-0.5 rounded text-primary">portfolio.jonathanclarke.dev</code></li>
                     <li>Traffic Proxy: Automated SSL auto-certification via Let's Encrypt managed by Kamal Proxy routing requests to port 3000.</li>
                   </ul>
@@ -278,7 +278,7 @@ export default function AboutPortfolio() {
 image: jonclarke84/portfolio
 servers:
   web:
-    - 68.183.32.103
+    - xx.xxx.xx.xxx
 proxy:
   ssl: true
   hosts:
