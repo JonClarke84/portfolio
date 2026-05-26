@@ -47,37 +47,59 @@ const projects = {
 
 const experiences = [
   {
-    role: "Senior Frontend Software Engineer",
+    role: "Senior Software Engineer",
     company: "Holiday Extras",
-    period: "2021 — PRESENT",
+    period: "Apr 2026 — PRESENT",
     isCurrent: true,
     bullets: [
-      "Leading the development of performant, accessible frontend platforms for the UK market leader.",
-      "Driving AI innovation as the first engineer to adopt AI-assisted development (Claude Code).",
-      "Implemented an internal plugins marketplace to support Codex and Claude LLM workflows.",
-      "Establishing engineering standards for automated testing and UI consistency across squads.",
+      "Developing AI-first workflows to migrate a legacy monolith frontend to a modern framework.",
+      "Built and maintain an AI skills marketplace for use across the engineering team.",
+      "Contributed to a platform to enable AI innovation for non-technical staff.",
+      "Built the frontend for our AI chat/tools for end users.",
+      "Build a markdown-to-react pipeline to enable rapid product innovation.",
     ],
   },
   {
-    role: "Founder & Lead, Internal Video Production",
+    role: "Software Engineer II",
     company: "Holiday Extras",
-    period: "PREVIOUSLY",
+    period: "Oct 2023 — Mar 2026",
     isCurrent: false,
-    description:
-      "Spearheaded an internal transition to found and lead the specialized Video Production unit.",
     bullets: [
-      "Ran the unit as a high-growth startup within the larger organization.",
-      "Managed end-to-end operations including partner relations, budgeting, and overall strategy.",
-      "Built a high-performance team by recruiting and mentoring specialists.",
+      "Leading feature development and collaborating across teams for impactful improvements.",
+      "Improved trip-creation form session-to-search rates by over 50%.",
+      "Pair programming and mentoring engineers while implementing new products in Trips API (GraphQL).",
     ],
   },
   {
-    role: "Frontend Engineer",
-    company: "TechSolutions Ltd.",
-    period: "2019 — 2021",
+    role: "Apprentice Software Engineer",
+    company: "Holiday Extras",
+    period: "Feb 2022 — Jul 2023",
     isCurrent: false,
-    description:
-      "Developed complex dashboard interfaces for fintech clients. Focused on real-time data streaming and accessible UX patterns.",
+    bullets: [
+      "Completed Makers Academy apprenticeship in Ruby, Javascript, and web development.",
+      "Achieved Distinction in software engineering apprenticeship.",
+    ],
+  },
+  {
+    role: "Multimedia Lead",
+    company: "Holiday Extras",
+    period: "Apr 2015 — Feb 2022",
+    isCurrent: false,
+    bullets: [
+      "Managed a team of 11 for all video/photo production, overseeing line management, recruitment, budgeting, and content strategy.",
+      "Launched a top-performing YouTube channel and grew organic Facebook audiences with video content.",
+      "Produced multiple videos achieving over 1 million organic views and #1 search ranks for key travel terms.",
+      "Led international shoots across four continents, utilizing a CAA drone license for aerial filming.",
+    ],
+  },
+  {
+    role: "Multimedia Editor",
+    company: "Holiday Extras",
+    period: "Oct 2011 — Apr 2015",
+    isCurrent: false,
+    bullets: [
+      "Founded and scaled the in-house video and photography production team, including mentoring and recruitment.",
+    ],
   },
 ];
 

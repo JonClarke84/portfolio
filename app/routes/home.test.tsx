@@ -31,7 +31,7 @@ describe("Home Route Page", () => {
     // Timeline Experience Section
     expect(screen.getByText("Professional Journey")).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /Senior Frontend Software Engineer/ })
+      screen.getByRole("heading", { name: /Senior Software Engineer/ })
     ).toBeInTheDocument();
     expect(screen.getAllByText("Holiday Extras")[0]).toBeInTheDocument();
 
