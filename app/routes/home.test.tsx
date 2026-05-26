@@ -36,6 +36,6 @@ describe("Home Route Page", () => {
     expect(screen.getAllByText("Holiday Extras")[0]).toBeInTheDocument();
 
     // Contact Section
-    expect(screen.getByText("Ready to build something exceptional?")).toBeInTheDocument();
+    expect(screen.getByText("Looking for a Senior Frontend Engineer?")).toBeInTheDocument();
   });
 });

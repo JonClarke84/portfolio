@@ -118,7 +118,7 @@ export default function Home() {
                 className={`bg-inverse-surface text-inverse-on-surface px-8 py-4 rounded-lg font-button text-button hover:opacity-90 transition-all ${focusRingClass}`}
                 href="#contact"
               >
-                Let's Talk
+                Get in Touch
               </a>
             </div>
           </div>
@@ -240,18 +240,18 @@ export default function Home() {
           <div className="bg-inverse-surface text-inverse-on-surface p-12 md:p-20 rounded-xl relative overflow-hidden">
             <div className="relative z-10 max-w-2xl">
               <h2 id="contact-title" className="font-display-xl text-headline-lg mb-6">
-                Ready to build something exceptional?
+                Looking for a Senior Frontend Engineer?
               </h2>
               <p className="font-body-lg text-body-lg text-surface-variant/80 mb-10">
-                I'm currently open to senior-level opportunities or high-impact
-                contract work. Let's discuss how my expertise in frontend
-                architecture and AI-driven workflows can help your team.
+                I am currently open to full-time, permanent senior-level engineering
+                opportunities. Let's discuss how my expertise in frontend architecture,
+                design systems, and AI-driven workflows can help your team.
               </p>
               <a
                 className={`bg-primary-container text-on-primary-container px-10 py-5 rounded-lg font-button text-headline-md flex items-center justify-center md:inline-flex gap-4 hover:scale-105 transition-transform ${focusRingClass}`}
                 href="mailto:hello@jonathanclarke.dev"
               >
-                Get In Touch{" "}
+                Connect via Email{" "}
                 <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
                   alternate_email
                 </span>
