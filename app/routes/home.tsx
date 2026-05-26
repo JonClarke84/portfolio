@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import NavBar from "../components/NavBar";
+import { Link } from "react-router";
 import ProjectCard from "../components/ProjectCard";
 import Timeline from "../components/Timeline";
 
@@ -299,7 +300,10 @@ export default function Home() {
               JC.DEV
             </a>
             <p className="text-secondary-fixed-variant font-body-md max-w-xs">
-              © 2024 Jonathan Clarke. Built with technical precision.
+              © 2024 Jonathan Clarke.{" "}
+              <Link to="/about-portfolio" className="underline hover:text-primary transition-colors">
+                Built with technical precision.
+              </Link>
             </p>
           </div>
           <div className="flex gap-8">

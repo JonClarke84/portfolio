@@ -138,7 +138,11 @@ export default function BookingEngine() {
           JC.DEV
         </div>
         <div className="text-on-surface-variant font-body-md text-body-md mb-4 md:mb-0 text-center md:text-left text-secondary">
-          © 2024 Jonathan Clarke. Built with agentic precision.
+          © 2024 Jonathan Clarke. Built with{" "}
+          <Link to="/about-portfolio" className="underline hover:text-primary transition-colors">
+            agentic precision
+          </Link>
+          .
         </div>
         <div className="flex space-x-6">
           <a

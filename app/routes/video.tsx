@@ -202,10 +202,14 @@ export default function Video() {
       {/* Footer */}
       <footer className="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto mt-section-gap border-t border-outline-variant/20 bg-surface">
         <div className="font-headline-md text-headline-md font-bold text-on-surface mb-4 md:mb-0">
-          DevPortfolio
+          JC.DEV
         </div>
         <div className="text-on-surface-variant font-body-md text-body-md mb-4 md:mb-0 text-center md:text-left text-secondary">
-          © 2024 Senior Frontend Engineer. Built with precision.
+          © 2024 Jonathan Clarke. Built with{" "}
+          <Link to="/about-portfolio" className="underline hover:text-primary transition-colors">
+            precision
+          </Link>
+          .
         </div>
         <div className="flex space-x-6">
           <a
