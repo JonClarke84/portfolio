@@ -277,11 +277,13 @@ export default function Home() {
               </p>
               <a
                 className={`bg-primary-container text-on-primary-container px-10 py-5 rounded-lg font-button text-headline-md flex items-center justify-center md:inline-flex gap-4 hover:scale-105 transition-transform ${focusRingClass}`}
-                href="mailto:hello@jonathanclarke.dev"
+                href="https://www.linkedin.com/in/jonathanclarkedev/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Connect via Email{" "}
+                Message on LinkedIn{" "}
                 <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
-                  alternate_email
+                  chat
                 </span>
               </a>
             </div>

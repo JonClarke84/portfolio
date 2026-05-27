@@ -29,7 +29,9 @@ export default function Footer({ precisionText = "technical precision" }: Footer
         <div className="flex gap-8">
           <a
             className={`text-secondary-fixed-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 flex items-center gap-2 ${inlineFocusRingClass}`}
-            href="#"
+            href="https://github.com/JonClarke84"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span className="material-symbols-outlined text-xl" aria-hidden="true">
               share
@@ -38,21 +40,14 @@ export default function Footer({ precisionText = "technical precision" }: Footer
           </a>
           <a
             className={`text-secondary-fixed-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 flex items-center gap-2 ${inlineFocusRingClass}`}
-            href="#"
+            href="https://www.linkedin.com/in/jonathanclarkedev/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span className="material-symbols-outlined text-xl" aria-hidden="true">
               link
             </span>{" "}
             LinkedIn
-          </a>
-          <a
-            className={`text-secondary-fixed-variant hover:text-primary transition-colors opacity-80 hover:opacity-100 flex items-center gap-2 ${inlineFocusRingClass}`}
-            href="#"
-          >
-            <span className="material-symbols-outlined text-xl" aria-hidden="true">
-              podcasts
-            </span>{" "}
-            Twitter
           </a>
         </div>
       </div>
