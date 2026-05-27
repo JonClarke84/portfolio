@@ -63,66 +63,67 @@ export default function Video() {
 
       {/* Main Content */}
       <main className="max-w-container-max mx-auto px-gutter mt-32 mb-section-gap">
-        {/* Back navigation & Header */}
-        <header className="mb-16 relative">
-          <Link
-            className={`inline-flex items-center text-primary hover:opacity-80 transition-opacity font-label-sm text-label-sm mb-stack-md group ${inlineFocusRingClass}`}
-            to="/"
-          >
-            <span
-              className="material-symbols-outlined mr-2 text-[16px] transition-transform group-hover:-translate-x-1"
-              aria-hidden="true"
+        {/* Top Row: Title & Strategic Impact side-by-side */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-12">
+          {/* Left Column: Title & Back Navigation */}
+          <div className="lg:col-span-5">
+            <Link
+              className={`inline-flex items-center text-primary hover:opacity-80 transition-opacity font-label-sm text-label-sm mb-stack-md group ${inlineFocusRingClass}`}
+              to="/"
             >
-              arrow_back
-            </span>
-            Back to Engineering
-          </Link>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-5">
-              <h1 className="font-display-xl text-display-xl text-on-surface leading-tight tracking-tight">
-                Video Production &amp; <br /> Strategic Leadership
-              </h1>
-            </div>
-            <div className="lg:col-span-7">
-              <p className="font-body-lg text-body-lg text-secondary leading-relaxed lg:pt-2">
-                Before transitioning to software engineering, I founded and led the internal Video
-                Production unit at Holiday Extras. Operating like a startup within a large
-                organization, I managed strategy, budgeting, and external partners while scaling the
-                team to include specialists in cinematography and editing.
-              </p>
-            </div>
+              <span
+                className="material-symbols-outlined mr-2 text-[16px] transition-transform group-hover:-translate-x-1"
+                aria-hidden="true"
+              >
+                arrow_back
+              </span>
+              Back to Engineering
+            </Link>
+            <h1 className="font-display-xl text-display-xl text-on-surface leading-tight tracking-tight">
+              Video Production &amp; <br /> Strategic Leadership
+            </h1>
           </div>
-        </header>
 
-        {/* Strategic Impact Section */}
-        <section
-          aria-labelledby="strategic-impact-heading"
-          className="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 ambient-shadow mb-16"
-        >
-          <div className="flex items-center gap-4 mb-6">
-            <div
-              className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-xl text-primary"
-              aria-hidden="true"
-            >
-              <span className="material-symbols-outlined text-[28px]">strategy</span>
+          {/* Right Column: Strategic Impact Card */}
+          <section
+            aria-labelledby="strategic-impact-heading"
+            className="lg:col-span-7 bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 ambient-shadow"
+          >
+            <div className="flex items-center gap-4 mb-6">
+              <div
+                className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-xl text-primary"
+                aria-hidden="true"
+              >
+                <span className="material-symbols-outlined text-[28px]">strategy</span>
+              </div>
+              <h2 id="strategic-impact-heading" className="font-headline-md text-headline-md text-on-surface">
+                Strategic Impact &amp; Leadership
+              </h2>
             </div>
-            <h2 id="strategic-impact-heading" className="font-headline-md text-headline-md text-on-surface">
-              Strategic Impact &amp; Leadership
-            </h2>
-          </div>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 font-body-md text-body-md text-secondary">
-            {strategicImpacts.map((impact, idx) => (
-              <li key={idx} className="flex items-start">
-                <span
-                  className="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5"
-                  aria-hidden="true"
-                >
-                  check_circle
-                </span>
-                {impact}
-              </li>
-            ))}
-          </ul>
+            <ul className="space-y-4 font-body-md text-body-md text-secondary">
+              {strategicImpacts.map((impact, idx) => (
+                <li key={idx} className="flex items-start">
+                  <span
+                    className="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5"
+                    aria-hidden="true"
+                  >
+                    check_circle
+                  </span>
+                  {impact}
+                </li>
+              ))}
+            </ul>
+          </section>
+        </div>
+
+        {/* Description Prose - Underneath and Full Width */}
+        <section aria-label="Overview" className="mb-16 max-w-4xl border-t border-outline-variant/20 pt-8">
+          <p className="font-body-lg text-body-lg text-secondary leading-relaxed">
+            Before transitioning to software engineering, I founded and led the internal Video
+            Production unit at Holiday Extras. Operating like a startup within a large
+            organization, I managed strategy, budgeting, and external partners while scaling the
+            team to include specialists in cinematography and editing.
+          </p>
         </section>
 
         {/* Video Projects Grid */}
