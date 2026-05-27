@@ -118,32 +118,91 @@ export default function Home() {
           className="max-w-container-max mx-auto px-gutter mb-section-gap pt-16"
           aria-label="Introduction"
         >
-          <div className="max-w-3xl">
-            <p className="font-label-sm text-label-sm text-primary mb-stack-md flex items-center gap-2">
-              <span className="w-8 h-[1px] bg-primary" aria-hidden="true"></span> SENIOR FRONTEND ENGINEER
-            </p>
-            <h1 className="font-display-xl text-display-xl mb-stack-lg leading-none tracking-tight">
-              Crafting <span className="text-primary">High-Performance</span> User Interfaces.
-            </h1>
-            <p className="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl">
-              I build resilient, scalable front-end systems with technical precision. Specialized in React architectures, performance optimization, and premium user experiences.
-            </p>
-            <div className="flex flex-wrap gap-stack-md">
-              <a
-                className={`bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-button text-button flex items-center gap-2 hover:opacity-95 transition-all ${focusRingClass}`}
-                href="#work"
-              >
-                View Portfolio{" "}
-                <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
-                  arrow_downward
-                </span>
-              </a>
-              <a
-                className={`bg-inverse-surface text-inverse-on-surface px-8 py-4 rounded-lg font-button text-button hover:opacity-90 transition-all ${focusRingClass}`}
-                href="#contact"
-              >
-                Get in Touch
-              </a>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            {/* Left text column */}
+            <div className="md:col-span-7">
+              <p className="font-label-sm text-label-sm text-primary mb-stack-md flex items-center gap-2">
+                <span className="w-8 h-[1px] bg-primary" aria-hidden="true"></span> SENIOR FRONTEND ENGINEER
+              </p>
+              <h1 className="font-display-xl text-display-xl mb-stack-lg leading-tight tracking-tight">
+                Crafting <span className="text-primary">High-Performance</span> User Interfaces.
+              </h1>
+              <p className="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-xl">
+                I build resilient, scalable front-end systems with technical precision. Specialized in React architectures, performance optimization, and premium user experiences.
+              </p>
+              <div className="flex flex-wrap gap-stack-md">
+                <a
+                  className={`bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-button text-button flex items-center gap-2 hover:opacity-95 transition-all ${focusRingClass}`}
+                  href="#work"
+                >
+                  View Portfolio{" "}
+                  <span className="material-symbols-outlined text-[20px]" aria-hidden="true">
+                    arrow_downward
+                  </span>
+                </a>
+                <a
+                  className={`bg-inverse-surface text-inverse-on-surface px-8 py-4 rounded-lg font-button text-button hover:opacity-90 transition-all ${focusRingClass}`}
+                  href="#contact"
+                >
+                  Get in Touch
+                </a>
+              </div>
+            </div>
+
+            {/* Right illustration column */}
+            <div className="hidden md:block md:col-span-5 relative" aria-hidden="true">
+              {/* Soft background glow circles */}
+              <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+
+              {/* Floating tech stack illustration card */}
+              <div className="relative bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 shadow-lg max-w-sm ml-auto hover:border-primary/30 transition-colors group">
+                <div className="flex justify-between items-center mb-6">
+                  <span className="text-[12px] font-bold font-label-sm text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    SYSTEM MONITOR
+                  </span>
+                  <div className="flex gap-1.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-error/85"></span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-outline-variant/50"></span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-primary/85"></span>
+                  </div>
+                </div>
+                
+                <div className="space-y-4 relative z-10">
+                  <div className="flex items-center gap-4 bg-surface-container/30 p-3 rounded-lg border border-outline-variant/10">
+                    <span className="material-symbols-outlined text-primary text-2xl animate-pulse">
+                      bolt
+                    </span>
+                    <div className="flex-grow">
+                      <span className="block text-xs font-semibold text-secondary">LCP PERFORMANCE</span>
+                      <span className="text-on-surface font-bold text-lg font-display-xl">98/100</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 bg-surface-container/30 p-3 rounded-lg border border-outline-variant/10">
+                    <span className="material-symbols-outlined text-primary text-2xl">
+                      psychology
+                    </span>
+                    <div className="flex-grow">
+                      <span className="block text-xs font-semibold text-secondary">AI CO-DEVELOPER</span>
+                      <span className="text-on-surface font-bold text-sm font-label-sm">CLAUDE CODE &amp; ANTIGRAVITY</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4 bg-surface-container/30 p-3 rounded-lg border border-outline-variant/10">
+                    <span className="material-symbols-outlined text-primary text-2xl">
+                      rule
+                    </span>
+                    <div className="flex-grow">
+                      <span className="block text-xs font-semibold text-secondary">INTEGRATION QUALITY</span>
+                      <span className="text-on-surface font-bold text-sm font-label-sm">100% GREEN TDD CYCLE</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Subtle grid background wires */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000005_1px,transparent_1px),linear-gradient(to_bottom,#00000005_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none rounded-2xl"></div>
+              </div>
             </div>
           </div>
         </section>
