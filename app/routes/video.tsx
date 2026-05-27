@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Video Production & Strategic Leadership - JC.DEV" },
+    { title: "Video Production & Strategic Leadership - jonathanclarke.dev" },
     {
       name: "description",
       content:

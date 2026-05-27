@@ -11,7 +11,7 @@ describe("Footer Component", () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText(/JC.DEV/i)).toBeInTheDocument();
+    expect(screen.getByText(/jonathanclarke\.dev/i)).toBeInTheDocument();
     expect(screen.getByText(/© 2024 Jonathan Clarke/i)).toBeInTheDocument();
     expect(screen.getByText(/technical precision/i)).toBeInTheDocument();
     expect(screen.getByText(/GitHub/i)).toBeInTheDocument();

@@ -23,10 +23,10 @@ export default function NavBar() {
       <div className="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
         <Link 
           to="/" 
-          aria-label="JC.DEV Portfolio Home"
+          aria-label="jonathanclarke.dev Portfolio Home"
           className={`font-headline-md text-headline-md font-bold text-on-surface ${focusRingClass}`}
         >
-          JC.DEV
+          jonathanclarke.dev
         </Link>
         
         {/* Desktop Menu */}

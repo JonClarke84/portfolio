@@ -16,7 +16,7 @@ export default function Footer({ precisionText = "technical precision" }: Footer
             className={`font-headline-md text-headline-md font-bold text-primary mb-2 block ${inlineFocusRingClass}`}
             to="/"
           >
-            JC.DEV
+            jonathanclarke.dev
           </Link>
           <p className="text-secondary-fixed-variant font-body-md max-w-xs">
             © 2024 Jonathan Clarke. Built with{" "}
