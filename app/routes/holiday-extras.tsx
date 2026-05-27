@@ -1,4 +1,4 @@
-import type { Route } from "./+types/booking-engine";
+import type { Route } from "./+types/holiday-extras";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
@@ -58,7 +58,7 @@ const apprenticeAchievements = [
   },
 ];
 
-export default function BookingEngine() {
+export default function HolidayExtras() {
   return (
     <>
       <NavBar />

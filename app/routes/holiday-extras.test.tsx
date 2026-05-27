@@ -1,13 +1,13 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 import { describe, it, expect } from "vitest";
-import BookingEngine from "./booking-engine";
+import HolidayExtras from "./holiday-extras";
 
-describe("BookingEngine Route Page", () => {
+describe("HolidayExtras Route Page", () => {
   it("renders the holidayextras.com case study page with CV achievements", () => {
     render(
-      <MemoryRouter initialEntries={["/booking-engine"]}>
-        <BookingEngine />
+      <MemoryRouter initialEntries={["/holiday-extras"]}>
+        <HolidayExtras />
       </MemoryRouter>
     );
 
