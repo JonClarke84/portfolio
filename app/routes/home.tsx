@@ -36,7 +36,7 @@ const projects = {
     {
       title: "Family Shopping App",
       description:
-        "A mobile-only Rails 8.1 and Hotwire application designed for family meal planning and weekly shopping coordination. Features multi-tenancy group isolation and a fractional decimal ordering algorithm for instant, O(1) database sorting.",
+        "A mobile-only Rails 8.1 and Hotwire application designed for family meal planning and weekly shopping coordination. Features multi-tenancy group isolation and a fractional decimal ordering algorithm that learns your supermarket layout to automatically sequence future grocery checklists.",
       image: "/shopping_list.png",
       tags: ["Ruby on Rails 8.1", "SQLite3", "Hotwire", "Turbo", "Stimulus", "bcrypt"],
       caseStudyUrl: "/shopping-app",

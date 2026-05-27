@@ -64,7 +64,8 @@ export default function ShoppingApp() {
           <p className="font-body-lg text-body-lg text-secondary leading-relaxed max-w-3xl">
             A specialized mobile-only shopping and meal planning tool built for household coordination. 
             By focusing strictly on a compact mobile scope, it provides a streamlined experience for 
-            family members to plan weekly meals and manage grocery checklists on the go.
+            family members to plan weekly meals, manage grocery checklists, and automatically optimize grocery routes 
+            by learning the aisle layout of your physical store as items are sorted.
           </p>
         </header>
 
