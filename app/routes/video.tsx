@@ -16,9 +16,11 @@ export function meta({}: Route.MetaArgs) {
 
 const strategicImpacts = [
   "Founded internal unit from scratch",
-  "Recruited and scaled specialized team",
-  "Managed enterprise budgeting",
-  "Elevated production quality standard",
+  "Recruited and scaled a team of 11 specialists",
+  "Managed enterprise budgeting & TV advertising production",
+  "Led cross-continent shoot coordination across four continents",
+  "External partner & agency liaison",
+  "CAA-licensed professional drone pilot",
   "Legoland Windsor Freelance Producer (2020)",
 ];
 
@@ -92,62 +94,36 @@ export default function Video() {
           </div>
         </header>
 
-        {/* Strategic Impact & Visual Storytelling Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {/* Strategic Impact Card */}
-          <section
-            aria-label="Strategic Impact"
-            className="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 ambient-shadow flex flex-col justify-between"
-          >
-            <div>
-              <div
-                className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-xl mb-6 text-primary"
-                aria-hidden="true"
-              >
-                <span className="material-symbols-outlined text-[28px]">strategy</span>
-              </div>
-              <h3 className="font-headline-md text-headline-md text-on-surface mb-4">
-                Strategic Impact
-              </h3>
-              <ul className="space-y-4 font-body-md text-body-md text-secondary">
-                {strategicImpacts.map((impact, idx) => (
-                  <li key={idx} className="flex items-start">
-                    <span
-                      className="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5"
-                      aria-hidden="true"
-                    >
-                      check_circle
-                    </span>
-                    {impact}
-                  </li>
-                ))}
-              </ul>
+        {/* Strategic Impact Section */}
+        <section
+          aria-labelledby="strategic-impact-heading"
+          className="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-8 ambient-shadow mb-16"
+        >
+          <div className="flex items-center gap-4 mb-6">
+            <div
+              className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-xl text-primary"
+              aria-hidden="true"
+            >
+              <span className="material-symbols-outlined text-[28px]">strategy</span>
             </div>
-          </section>
-
-          {/* Visual Storytelling Card */}
-          <article
-            aria-label="Visual Storytelling Context"
-            className="bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden ambient-shadow flex flex-col sm:flex-row"
-          >
-            <div className="h-48 sm:h-auto sm:w-1/2 bg-surface-variant relative">
-              <img
-                alt=""
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uijTmxE0nlOfuH6hqY2MwCOKp635EYuz4k1e-6PAtLWHBOdOIU3XvhUSEgDbnWA4o_EMZ9PZNaFM2msx6fXhDUmxioMCpqiqkh9uJTCRjRIEqug2sTxqnYiwpoXhs269L091AjZFDY9tOMNp67vm7newbfNms7CNhrmjz01vG58zD_FodmtNs0a89xlk8-v6tIf6Ppwkgrp9TBl-LkjOmK74UlSCm3gKJAlNy6Rctk-vC1P1vzGDF0YNCQ"
-              />
-            </div>
-            <div className="p-8 sm:w-1/2 flex-grow flex flex-col justify-center">
-              <h3 className="font-headline-md text-headline-md text-on-surface mb-3">
-                Visual Storytelling
-              </h3>
-              <p className="font-body-md text-body-md text-secondary leading-relaxed">
-                Leveraging cinematography to drive business metrics and user engagement across
-                digital platforms.
-              </p>
-            </div>
-          </article>
-        </div>
+            <h2 id="strategic-impact-heading" className="font-headline-md text-headline-md text-on-surface">
+              Strategic Impact &amp; Leadership
+            </h2>
+          </div>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 font-body-md text-body-md text-secondary">
+            {strategicImpacts.map((impact, idx) => (
+              <li key={idx} className="flex items-start">
+                <span
+                  className="material-symbols-outlined text-primary mr-3 text-[20px] mt-0.5"
+                  aria-hidden="true"
+                >
+                  check_circle
+                </span>
+                {impact}
+              </li>
+            ))}
+          </ul>
+        </section>
 
         {/* Video Projects Grid */}
         <section aria-labelledby="projects-heading">
