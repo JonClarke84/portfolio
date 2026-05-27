@@ -25,6 +25,7 @@ describe("ShoppingApp Route Page", () => {
     expect(screen.getByText("Mobile-Only Design")).toBeInTheDocument();
     expect(screen.getByText("Family Meal Planner")).toBeInTheDocument();
     expect(screen.getByText("Multi-Tenant Family Groups")).toBeInTheDocument();
+    expect(screen.getByText("Route Optimization")).toBeInTheDocument();
 
     // Assert tech badges
     expect(screen.getByText("Ruby 3.3")).toBeInTheDocument();

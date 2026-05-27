@@ -26,6 +26,10 @@ const keyFeatures = [
     title: "Multi-Tenant Family Groups",
     desc: "Uses a session-based Group tenant system to isolate list contents. Invites allow family members to share lists and sync checks in real-time.",
   },
+  {
+    title: "Route Optimization",
+    desc: "Learns the layout of your supermarket as you drag items into order. Future shopping lists automatically sequence items to match your path through the aisles.",
+  },
 ];
 
 const technicalImplementation = [
@@ -135,6 +139,9 @@ export default function ShoppingApp() {
                 <code className="text-on-surface font-semibold">2.0</code> updates only the single shifted item's value to 
                 <code className="text-on-surface font-semibold">1.5</code>. This delivers a constant 
                 <code className="text-primary font-semibold">O(1)</code> write complexity, scaling gracefully for daily family sorting activities.
+              </p>
+              <p className="text-secondary text-body-md leading-relaxed mt-4">
+                This ordering is crucial for weekly grocery runs. As family members drag items into order while shopping, the app learns their relative supermarket aisle positions. When these items are added to subsequent shopping lists, the database automatically sequences them to match the optimal path through the physical store, streamlining the family shopping routine.
               </p>
             </section>
           </div>
