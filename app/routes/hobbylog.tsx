@@ -73,8 +73,9 @@ export default function HobbyLog() {
             HobbyLog
           </h1>
           <p className="font-body-lg text-body-lg text-secondary leading-relaxed max-w-3xl">
-            HobbyLog is a personal backlog tracker designed specifically for tabletop miniature painters,
+            HobbyLog is a dedicated backlog tracker designed specifically for tabletop miniature painters,
             acting as a customized Trello board to manage painting workflows, labels, and collection metrics.
+            The platform is actively used by members of the local Warhammer community to organize, paint, and track their miniature collections.
           </p>
         </header>
 
@@ -160,7 +161,7 @@ export default function HobbyLog() {
               >
                 <div className="relative aspect-[4/3] bg-surface-container overflow-hidden">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdS5G6eKKMiO5822ZOubwYf9pUb-Yk67ZaNntxBjJoatWzSf1idN6ogMpMVUwCYFLpXrmxQWcaggxPx--VfEPAqBx3f3hDPQV8N1QDUDZasxpLP9m7hf4vvuRtBC495DSNze6qxvBtT5M1ZwCJpNRZNTKguOuhD9BzHvD2XO7RzlcBqu9fNBE_U40Eu59Yv4JFomPC4iiFAdMFtB0TQO9wMAdlTVsLV_n6eVIRaI9-9MGdQ82Go0eQOcCpFKCS7H1Agt-ruwuyUZQ" 
+                    src="/hobby_log.png" 
                     alt="HobbyLog web application preview" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

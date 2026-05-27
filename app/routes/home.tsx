@@ -28,9 +28,8 @@ const projects = {
     {
       title: "HobbyLog",
       description:
-        "A personal backlog tracker designed as a Kanban board (Trello-style) for tabletop miniature painters. Manages collections and paints log pipelines with a full-stack monorepo featuring pragmatic drag-and-drop, data analytics, and Clerk authentication.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAdS5G6eKKMiO5822ZOubwYf9pUb-Yk67ZaNntxBjJoatWzSf1idN6ogMpMVUwCYFLpXrmxQWcaggxPx--VfEPAqBx3f3hDPQV8N1QDUDZasxpLP9m7hf4vvuRtBC495DSNze6qxvBtT5M1ZwCJpNRZNTKguOuhD9BzHvD2XO7RzlcBqu9fNBE_U40Eu59Yv4JFomPC4iiFAdMFtB0TQO9wMAdlTVsLV_n6eVIRaI9-9MGdQ82Go0eQOcCpFKCS7H1Agt-ruwuyUZQ",
+        "A backlog tracker designed as a Kanban board (Trello-style) for tabletop miniature painters, actively used by members of the local Warhammer community. Features sub-second drag-and-drop, collection metrics, Clerk authentication, and a full-stack monorepo layout.",
+      image: "/hobby_log.png",
       tags: ["React 19", "React Router 7", "Hono", "PostgreSQL", "Drizzle ORM", "Clerk", "Turborepo"],
       caseStudyUrl: "/hobbylog",
     },

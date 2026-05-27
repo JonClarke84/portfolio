@@ -32,6 +32,8 @@ describe("HobbyLog Route Page", () => {
     // Assert live link is present
     const link = screen.getByRole("link", { name: /Visit HobbyLog live site/i });
     expect(link).toHaveAttribute("href", "https://hobbylog.jonathanclarke.dev");
-    expect(screen.getByAltText(/HobbyLog web application preview/i)).toBeInTheDocument();
+    const img = screen.getByAltText(/HobbyLog web application preview/i);
+    expect(img).toBeInTheDocument();
+    expect(img).toHaveAttribute("src", "/hobby_log.png");
   });
 });
