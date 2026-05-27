@@ -16,8 +16,6 @@ describe("Video Route Page", () => {
       screen.getByRole("heading", { name: /Video Production &.*Strategic Leadership/ })
     ).toBeInTheDocument();
 
-    expect(screen.getByText("Back to Engineering")).toBeInTheDocument();
-
     // Strategic Impact Card
     expect(screen.getByText("Strategic Impact & Leadership")).toBeInTheDocument();
     expect(screen.getByText("Founded internal unit from scratch")).toBeInTheDocument();

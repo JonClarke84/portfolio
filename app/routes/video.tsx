@@ -1,5 +1,4 @@
 import type { Route } from "./+types/video";
-import { Link } from "react-router";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
@@ -67,18 +66,7 @@ export default function Video() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-12">
           {/* Left Column: Title & Back Navigation */}
           <div className="lg:col-span-5">
-            <Link
-              className={`inline-flex items-center text-primary hover:opacity-80 transition-opacity font-label-sm text-label-sm mb-stack-md group ${inlineFocusRingClass}`}
-              to="/"
-            >
-              <span
-                className="material-symbols-outlined mr-2 text-[16px] transition-transform group-hover:-translate-x-1"
-                aria-hidden="true"
-              >
-                arrow_back
-              </span>
-              Back to Engineering
-            </Link>
+
             <h1 className="font-display-xl text-display-xl text-on-surface leading-tight tracking-tight">
               Video Production &amp; <br /> Strategic Leadership
             </h1>
