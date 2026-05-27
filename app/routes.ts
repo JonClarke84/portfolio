@@ -8,4 +8,5 @@ export default [
   route("experience", "routes/experience.tsx"),
   route("hobbylog", "routes/hobbylog.tsx"),
   route("shopping-app", "routes/shopping-app.tsx"),
+  route("up", "routes/up.tsx"),
 ] satisfies RouteConfig;
