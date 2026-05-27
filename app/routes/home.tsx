@@ -26,12 +26,13 @@ const projects = {
   },
   secondary: [
     {
-      title: "HobbyLog Architecture",
+      title: "HobbyLog",
       description:
-        "A full-stack hobby tracking application built with a focus on complex data visualizations and sub-second interaction latency.",
+        "A personal backlog tracker designed as a Kanban board (Trello-style) for tabletop miniature painters. Manages collections and paints log pipelines with a full-stack monorepo featuring pragmatic drag-and-drop, data analytics, and Clerk authentication.",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuAdS5G6eKKMiO5822ZOubwYf9pUb-Yk67ZaNntxBjJoatWzSf1idN6ogMpMVUwCYFLpXrmxQWcaggxPx--VfEPAqBx3f3hDPQV8N1QDUDZasxpLP9m7hf4vvuRtBC495DSNze6qxvBtT5M1ZwCJpNRZNTKguOuhD9BzHvD2XO7RzlcBqu9fNBE_U40Eu59Yv4JFomPC4iiFAdMFtB0TQO9wMAdlTVsLV_n6eVIRaI9-9MGdQ82Go0eQOcCpFKCS7H1Agt-ruwuyUZQ",
-      tags: ["TypeScript", "GraphQL", "PostgreSQL"],
+      tags: ["React 19", "React Router 7", "Hono", "PostgreSQL", "Drizzle ORM", "Clerk", "Turborepo"],
+      caseStudyUrl: "https://hobbylog.jonathanclarke.dev/",
     },
     {
       title: "Shopping App Pro",

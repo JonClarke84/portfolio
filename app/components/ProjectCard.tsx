@@ -108,6 +108,35 @@ export default function ProjectCard({
         <div>
           <h3 id={titleId} className="font-headline-md text-headline-md mb-2">{title}</h3>
           <p className="text-secondary font-body-md mb-4">{description}</p>
+          {caseStudyUrl && (
+            <div className="mb-4">
+              {caseStudyUrl.startsWith("/") ? (
+                <Link
+                  className={`inline-flex items-center gap-2 text-primary font-button hover:underline ${focusRingClass}`}
+                  to={caseStudyUrl}
+                  aria-label={`Read case study for ${title}`}
+                >
+                  Case Study{" "}
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+                    open_in_new
+                  </span>
+                </Link>
+              ) : (
+                <a
+                  className={`inline-flex items-center gap-2 text-primary font-button hover:underline ${focusRingClass}`}
+                  href={caseStudyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit live site for ${title}`}
+                >
+                  Visit Project{" "}
+                  <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+                    open_in_new
+                  </span>
+                </a>
+              )}
+            </div>
+          )}
         </div>
         <div className="flex flex-wrap gap-2 mt-auto" aria-label="Technologies used">
           {tags.map((tag, idx) => (

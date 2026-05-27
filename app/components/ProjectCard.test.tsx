@@ -33,4 +33,13 @@ describe("ProjectCard Component", () => {
     expect(screen.queryByText("COMMERCIAL")).not.toBeInTheDocument();
     expect(screen.queryByText("Case Study")).not.toBeInTheDocument();
   });
+
+  it("renders a standard project card with Visit Project link for external caseStudyUrl", () => {
+    const externalProps = { ...projectProps, caseStudyUrl: "https://example.com" };
+    render(<ProjectCard {...externalProps} featured={false} />);
+
+    const link = screen.getByRole("link", { name: /Visit live site for/i });
+    expect(link).toHaveAttribute("href", "https://example.com");
+    expect(link).toHaveAttribute("target", "_blank");
+  });
 });
