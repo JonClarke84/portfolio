@@ -21,7 +21,7 @@ describe("Home Route Page", () => {
 
     // Secondary Project Cards
     expect(screen.getByText("HobbyLog")).toBeInTheDocument();
-    expect(screen.getByText("Shopping App Pro")).toBeInTheDocument();
+    expect(screen.getByText("Family Shopping App")).toBeInTheDocument();
 
     // Technical Arsenal
     expect(screen.getByText("Technical Arsenal")).toBeInTheDocument();

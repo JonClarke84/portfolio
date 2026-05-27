@@ -7,4 +7,5 @@ export default [
   route("about-portfolio", "routes/about-portfolio.tsx"),
   route("experience", "routes/experience.tsx"),
   route("hobbylog", "routes/hobbylog.tsx"),
+  route("shopping-app", "routes/shopping-app.tsx"),
 ] satisfies RouteConfig;

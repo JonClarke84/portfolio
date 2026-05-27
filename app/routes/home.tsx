@@ -34,12 +34,12 @@ const projects = {
       caseStudyUrl: "/hobbylog",
     },
     {
-      title: "Shopping App Pro",
+      title: "Family Shopping App",
       description:
-        "A premium design-system-first e-commerce interface. Optimized for mobile-first interactions and complex filtering logic.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuB2f8O5DrWCRgxF-d6WG68Q3oS7vHY80lgNjrXAko-pQ5uXnm9UNSeX19FlhpGOjOw_oiandJpfyMr5-su_1pIBEQaYFbLWNt2SNH_sviTm0BPaHac_4pVqtHsqXW3c-fQzEtQWZ8CkfhqAIJT5EgkXGih8N0ktd62XKkQx8nI84cV6OivCtXlDN_lVUGeKVLdFz4mArBwHziy5TbuXWpimw5Ae2AQ9e_TZEzzYIupZXYxvGWSCg6zcIAvJjcBhQr8ZtpNuG8D5aIE",
-      tags: ["TailwindCSS", "FramerMotion", "Zustand"],
+        "A mobile-only Rails 8.1 and Hotwire application designed for family meal planning and weekly shopping coordination. Features multi-tenancy group isolation and a fractional decimal ordering algorithm for instant, O(1) database sorting.",
+      image: "/shopping_list.png",
+      tags: ["Ruby on Rails 8.1", "SQLite3", "Hotwire", "Turbo", "Stimulus", "bcrypt"],
+      caseStudyUrl: "/shopping-app",
     },
   ],
 };
