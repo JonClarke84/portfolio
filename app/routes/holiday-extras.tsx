@@ -185,7 +185,7 @@ export default function HolidayExtras() {
               >
                 <div className="relative aspect-[4/3] bg-surface-container overflow-hidden">
                   <img 
-                    src="/holidayextras_thumbnail.png" 
+                    src="/holiday_extras.png" 
                     alt="holidayextras.com browser mockup screenshot" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
