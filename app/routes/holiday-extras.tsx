@@ -147,28 +147,6 @@ export default function HolidayExtras() {
 
           {/* Right Metrics Column (4 cols) */}
           <div className="md:col-span-4 space-y-8 md:sticky md:top-24">
-            <div className="bg-inverse-surface text-inverse-on-surface p-8 rounded-2xl shadow-md flex flex-col gap-6">
-              <h3 className="font-headline-md text-headline-md text-lg border-b border-surface-variant/20 pb-2">
-                Business Impact Metrics
-              </h3>
-              <div className="space-y-4">
-                <div>
-                  <span className="block font-display-xl text-primary-container leading-none font-bold">30%</span>
-                  <span className="text-sm text-surface-variant/80 font-medium">Trip Search Completion Increase</span>
-                </div>
-                <hr className="border-surface-variant/10" />
-                <div>
-                  <span className="block font-display-xl text-primary-container leading-none font-bold">50%</span>
-                  <span className="text-sm text-surface-variant/80 font-medium">Session-to-Search Conversion Win</span>
-                </div>
-                <hr className="border-surface-variant/10" />
-                <div>
-                  <span className="block font-display-xl text-primary-container leading-none font-bold">Distinction</span>
-                  <span className="text-sm text-surface-variant/80 font-medium">Makers Academy Apprenticeship Grade</span>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
               <h3 className="font-headline-md text-headline-md text-base text-on-surface font-bold">
                 Live Platform Link
