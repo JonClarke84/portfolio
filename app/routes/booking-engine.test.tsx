@@ -26,5 +26,10 @@ describe("BookingEngine Route Page", () => {
     expect(screen.getAllByText(/Trips/i)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/50%/i)[0]).toBeInTheDocument();
     expect(screen.getAllByText(/30%/i)[0]).toBeInTheDocument();
+
+    // Assert live link and thumbnail are present
+    const link = screen.getByRole("link", { name: /Visit holidayextras.com/i });
+    expect(link).toHaveAttribute("href", "https://www.holidayextras.com");
+    expect(screen.getByAltText(/holidayextras.com browser mockup/i)).toBeInTheDocument();
   });
 });

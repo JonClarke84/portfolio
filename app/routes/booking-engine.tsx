@@ -168,6 +168,36 @@ export default function BookingEngine() {
                 </div>
               </div>
             </div>
+
+            <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <h3 className="font-headline-md text-headline-md text-base text-on-surface font-bold">
+                Live Platform Link
+              </h3>
+              <p className="text-secondary text-sm leading-relaxed">
+                Visit the live holidayextras.com booking portal to view the search flows and booking engines optimized.
+              </p>
+              <a 
+                href="https://www.holidayextras.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group block overflow-hidden rounded-xl border border-outline-variant/20 hover:border-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none"
+                aria-label="Visit holidayextras.com (opens in new tab)"
+              >
+                <div className="relative aspect-[4/3] bg-surface-container overflow-hidden">
+                  <img 
+                    src="/holidayextras_thumbnail.png" 
+                    alt="holidayextras.com browser mockup screenshot" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                    <span className="bg-white/90 text-primary px-4 py-2 rounded-full text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                      Visit Site
+                      <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </main>
