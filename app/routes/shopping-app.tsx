@@ -143,20 +143,32 @@ export default function ShoppingApp() {
           <div className="md:col-span-4 space-y-8 md:sticky md:top-24">
             <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
               <h3 className="font-headline-md text-headline-md text-base text-on-surface font-bold">
-                Application Interface
+                Live Project Link
               </h3>
               <p className="text-secondary text-sm leading-relaxed">
-                A mobile interface tailored for touch targets, grocery aisle checkboxes, and responsive meal allocations.
+                Visit the live Family Shopping App interface to check out the mobile-optimized checklist, meal planner, and sorting features.
               </p>
-              <div className="group block overflow-hidden rounded-xl border border-outline-variant/20 transition-colors">
+              <a 
+                href="https://www.jonathanclarke.dev/shopping" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group block overflow-hidden rounded-xl border border-outline-variant/20 hover:border-primary transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none"
+                aria-label="Visit Family Shopping App live site (opens in new tab)"
+              >
                 <div className="relative aspect-[4/3] bg-surface-container overflow-hidden">
                   <img 
                     src="/shopping_list.png" 
                     alt="Family Shopping App mobile view preview" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                    <span className="bg-white/90 text-primary px-4 py-2 rounded-full text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                      Visit Site
+                      <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>

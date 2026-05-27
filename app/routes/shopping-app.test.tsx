@@ -32,7 +32,9 @@ describe("ShoppingApp Route Page", () => {
     expect(screen.getByText("SQLite3")).toBeInTheDocument();
     expect(screen.getByText("Hotwire (Turbo/Stimulus)")).toBeInTheDocument();
 
-    // Assert image preview
+    // Assert live link is present
+    const link = screen.getByRole("link", { name: /Visit Family Shopping App live site/i });
+    expect(link).toHaveAttribute("href", "https://www.jonathanclarke.dev/shopping");
     const image = screen.getByAltText(/Family Shopping App mobile view preview/i);
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("src", "/shopping_list.png");
