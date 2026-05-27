@@ -10,7 +10,6 @@ export default function NavBar() {
 
   // Dynamic anchor links depending on whether we are on the homepage
   const workHref = isHomePage ? "#work" : "/#work";
-  const stackHref = isHomePage ? "#stack" : "/#stack";
   const contactHref = isHomePage ? "#contact" : "/#contact";
 
   // Shared focus style class
@@ -38,13 +37,7 @@ export default function NavBar() {
           >
             Work
           </a>
-          <a
-            className={`font-body-md text-body-md text-secondary hover:text-primary transition-colors ${focusRingClass}`}
-            href={stackHref}
-          >
-            Stack
-          </a>
-          
+
           {isExperiencePage ? (
             <a
               className={`font-body-md text-body-md text-primary font-bold border-b-2 border-primary hover:text-primary transition-colors pb-1 ${focusRingClass}`}
@@ -114,14 +107,7 @@ export default function NavBar() {
           >
             Work
           </a>
-          <a
-            className={`font-body-md text-body-md text-secondary hover:text-primary transition-colors py-1 ${focusRingClass}`}
-            href={stackHref}
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Stack
-          </a>
-          
+
           {isExperiencePage ? (
             <a
               className={`font-body-md text-body-md text-primary font-bold border-b-2 border-primary hover:text-primary transition-colors py-1 self-start ${focusRingClass}`}

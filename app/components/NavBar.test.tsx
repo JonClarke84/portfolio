@@ -13,7 +13,6 @@ describe("NavBar Component", () => {
 
     expect(screen.getByText("jonathanclarke.dev")).toBeInTheDocument();
     expect(screen.getByText("Work")).toBeInTheDocument();
-    expect(screen.getByText("Stack")).toBeInTheDocument();
     expect(screen.getByText("Experience")).toBeInTheDocument();
     expect(screen.getByText("Video Production")).toBeInTheDocument();
     expect(screen.getByText("Contact")).toBeInTheDocument();
