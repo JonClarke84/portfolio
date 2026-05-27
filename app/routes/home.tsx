@@ -17,13 +17,13 @@ export function meta({}: Route.MetaArgs) {
 
 const projects = {
   featured: {
-    title: "Holiday Extras Booking Engine",
+    title: "holidayextras.com",
     description:
-      "Overhauled the core booking flow for a high-traffic travel platform. Reduced LCP by 40% and improved conversion rates through a modular React architecture and robust state management.",
+      "Pioneered Claude Code adoption across the business, migrated monolithic codebases to React/Remix, and drove key conversion improvements on Trips, increasing search completion by 30%.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuArvjj7lneDfHOptyljEvGiTNfAMBbQICSYdy5GmZnrVPGuPvG0IPz4uN-VTJ2CYCLCzpc5l6RyK_JZPp36szc_6l5WpjFrEIuK3jODivV6mJE_Ul5ekn6zPVyu-KebDryEvyf0dqfdOH_YdeUUK5-vyqwAB_9NZIB5zBsUDiBA5ZdsPJccLP1K390rdJHLzYRSv7U2zIIcjw_38W9l3iFVIW8vNJjLIhbUBsKgq0meQLhkk-x-JHseP8lNGw2yOO_zojB8fb4SkBI",
-    tags: ["React", "Next.js", "Redux", "Node.js"],
-    labels: ["COMMERCIAL", "LEAD FRONTEND"],
+    tags: ["TypeScript", "React", "Remix", "Node.js"],
+    labels: ["COMMERCIAL", "SENIOR FRONTEND"],
     caseStudyUrl: "/booking-engine",
   },
   secondary: [
@@ -53,6 +53,7 @@ const experiences = [
     period: "Apr 2026 — PRESENT",
     isCurrent: true,
     bullets: [
+      "Pioneered Claude Code adoption across the business.",
       "Developing AI-first workflows to migrate a legacy monolith frontend to a modern framework.",
       "Built and maintain an AI skills marketplace for use across the engineering team.",
       "Contributed to a platform to enable AI innovation for non-technical staff.",
@@ -67,6 +68,7 @@ const experiences = [
     isCurrent: false,
     bullets: [
       "Leading feature development and collaborating across teams for impactful improvements.",
+      "Worked on Trips - helping increase items booked per trip and increasing trip search completion by 30%.",
       "Improved trip-creation form session-to-search rates by over 50%.",
       "Pair programming and mentoring engineers while implementing new products in Trips API (GraphQL).",
     ],
