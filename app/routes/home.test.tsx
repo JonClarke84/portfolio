@@ -28,13 +28,6 @@ describe("Home Route Page", () => {
     expect(screen.getByText("Frontend Architecture")).toBeInTheDocument();
     expect(screen.getByText("AI & Automation")).toBeInTheDocument();
 
-    // Timeline Experience Section
-    expect(screen.getByText("Professional Journey")).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /Senior Software Engineer/ })
-    ).toBeInTheDocument();
-    expect(screen.getAllByText("Holiday Extras")[0]).toBeInTheDocument();
-
     // Contact Section
     expect(screen.getByText("Looking for a Senior Frontend Engineer?")).toBeInTheDocument();
   });

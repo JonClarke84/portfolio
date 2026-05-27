@@ -5,4 +5,5 @@ export default [
   route("video", "routes/video.tsx"),
   route("holiday-extras", "routes/holiday-extras.tsx"),
   route("about-portfolio", "routes/about-portfolio.tsx"),
+  route("experience", "routes/experience.tsx"),
 ] satisfies RouteConfig;

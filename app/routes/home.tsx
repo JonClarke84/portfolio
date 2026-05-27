@@ -1,7 +1,6 @@
 import type { Route } from "./+types/home";
 import NavBar from "../components/NavBar";
 import ProjectCard from "../components/ProjectCard";
-import Timeline from "../components/Timeline";
 import Footer from "../components/Footer";
 
 export function meta({}: Route.MetaArgs) {
@@ -45,65 +44,6 @@ const projects = {
   ],
 };
 
-const experiences = [
-  {
-    role: "Senior Software Engineer",
-    company: "Holiday Extras",
-    period: "Apr 2026 — PRESENT",
-    isCurrent: true,
-    bullets: [
-      "Pioneered Claude Code adoption across the business.",
-      "Developing AI-first workflows to migrate a legacy monolith frontend to a modern framework.",
-      "Built and maintain an AI skills marketplace for use across the engineering team.",
-      "Contributed to a platform to enable AI innovation for non-technical staff.",
-      "Built the frontend for our AI chat/tools for end users.",
-      "Build a markdown-to-react pipeline to enable rapid product innovation.",
-    ],
-  },
-  {
-    role: "Software Engineer II",
-    company: "Holiday Extras",
-    period: "Oct 2023 — Mar 2026",
-    isCurrent: false,
-    bullets: [
-      "Leading feature development and collaborating across teams for impactful improvements.",
-      "Worked on Trips - helping increase items booked per trip and increasing trip search completion by 30%.",
-      "Improved trip-creation form session-to-search rates by over 50%.",
-      "Pair programming and mentoring engineers while implementing new products in Trips API (GraphQL).",
-    ],
-  },
-  {
-    role: "Apprentice Software Engineer",
-    company: "Holiday Extras",
-    period: "Feb 2022 — Jul 2023",
-    isCurrent: false,
-    bullets: [
-      "Completed Makers Academy apprenticeship in Ruby, Javascript, and web development.",
-      "Achieved Distinction in software engineering apprenticeship.",
-    ],
-  },
-  {
-    role: "Multimedia Lead",
-    company: "Holiday Extras",
-    period: "Apr 2015 — Feb 2022",
-    isCurrent: false,
-    bullets: [
-      "Managed a team of 11 for all video/photo production, overseeing line management, recruitment, budgeting, and content strategy.",
-      "Launched a top-performing YouTube channel and grew organic Facebook audiences with video content.",
-      "Produced multiple videos achieving over 1 million organic views and #1 search ranks for key travel terms.",
-      "Led international shoots across four continents, utilizing a CAA drone license for aerial filming.",
-    ],
-  },
-  {
-    role: "Multimedia Editor",
-    company: "Holiday Extras",
-    period: "Oct 2011 — Apr 2015",
-    isCurrent: false,
-    bullets: [
-      "Founded and scaled the in-house video and photography production team, including mentoring and recruitment.",
-    ],
-  },
-];
 
 export default function Home() {
   const focusRingClass = "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none rounded-lg";
@@ -238,26 +178,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Experience Section */}
-        <section
-          className="max-w-container-max mx-auto px-gutter my-section-gap scroll-mt-24"
-          id="experience"
-          aria-labelledby="experience-title"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-            <div className="md:col-span-4">
-              <h2 id="experience-title" className="font-headline-lg text-headline-lg sticky top-24">
-                Professional Journey
-              </h2>
-              <p className="text-secondary mt-4 font-body-md">
-                A career defined by leadership and technical evolution.
-              </p>
-            </div>
-            <div className="md:col-span-8">
-              <Timeline items={experiences} />
-            </div>
-          </div>
-        </section>
 
         {/* Contact Section */}
         <section

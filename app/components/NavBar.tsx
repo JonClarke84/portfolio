@@ -3,14 +3,15 @@ import { Link, useLocation } from "react-router";
 
 export default function NavBar() {
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
   const isVideoPage = location.pathname === "/video";
+  const isExperiencePage = location.pathname === "/experience";
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Dynamic links depending on whether we are on the video page
-  const workHref = isVideoPage ? "/#work" : "#work";
-  const stackHref = isVideoPage ? "/#stack" : "#stack";
-  const experienceHref = isVideoPage ? "/#experience" : "#experience";
-  const contactHref = isVideoPage ? "/#contact" : "#contact";
+  // Dynamic anchor links depending on whether we are on the homepage
+  const workHref = isHomePage ? "#work" : "/#work";
+  const stackHref = isHomePage ? "#stack" : "/#stack";
+  const contactHref = isHomePage ? "#contact" : "/#contact";
 
   // Shared focus style class
   const focusRingClass = "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none rounded";
@@ -43,12 +44,23 @@ export default function NavBar() {
           >
             Stack
           </a>
-          <a
-            className={`font-body-md text-body-md text-secondary hover:text-primary transition-colors ${focusRingClass}`}
-            href={experienceHref}
-          >
-            Experience
-          </a>
+          
+          {isExperiencePage ? (
+            <a
+              className={`font-body-md text-body-md text-primary font-bold border-b-2 border-primary hover:text-primary transition-colors pb-1 ${focusRingClass}`}
+              href="#"
+              aria-current="page"
+            >
+              Experience
+            </a>
+          ) : (
+            <Link
+              className={`font-body-md text-body-md text-secondary hover:text-primary transition-colors ${focusRingClass}`}
+              to="/experience"
+            >
+              Experience
+            </Link>
+          )}
           
           {isVideoPage ? (
             <a
@@ -73,10 +85,6 @@ export default function NavBar() {
           >
             Contact
           </a>
-          
-          <button className={`bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-button text-button hover:opacity-90 transition-opacity ml-4 ${focusRingClass}`}>
-            Resume
-          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -113,13 +121,25 @@ export default function NavBar() {
           >
             Stack
           </a>
-          <a
-            className={`font-body-md text-body-md text-secondary hover:text-primary transition-colors py-1 ${focusRingClass}`}
-            href={experienceHref}
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Experience
-          </a>
+          
+          {isExperiencePage ? (
+            <a
+              className={`font-body-md text-body-md text-primary font-bold border-b-2 border-primary hover:text-primary transition-colors py-1 self-start ${focusRingClass}`}
+              href="#"
+              aria-current="page"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Experience
+            </a>
+          ) : (
+            <Link
+              className={`font-body-md text-body-md text-secondary hover:text-primary transition-colors py-1 ${focusRingClass}`}
+              to="/experience"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Experience
+            </Link>
+          )}
           
           {isVideoPage ? (
             <a
@@ -147,9 +167,6 @@ export default function NavBar() {
           >
             Contact
           </a>
-          <button className={`bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-button text-button hover:opacity-90 transition-opacity w-full ${focusRingClass}`}>
-            Resume
-          </button>
         </div>
       )}
     </nav>

@@ -52,4 +52,16 @@ describe("NavBar Component", () => {
     const workLink = screen.getByText("Work");
     expect(workLink).toHaveAttribute("href", "/#work");
   });
+
+  it("highlights Experience link as active on /experience page", () => {
+    render(
+      <MemoryRouter initialEntries={["/experience"]}>
+        <NavBar />
+      </MemoryRouter>
+    );
+
+    const experienceLink = screen.getByText("Experience");
+    expect(experienceLink).toHaveClass("text-primary");
+    expect(experienceLink).toHaveAttribute("href", "#");
+  });
 });
