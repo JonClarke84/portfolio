@@ -68,7 +68,7 @@
 
 /* Custom Text Style Utilities */
 @utility text-display-xl {
-  font-size: 64px;
+  font-size: clamp(2rem, 8vw, 4rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -233,6 +233,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInSlideUp {
