@@ -82,7 +82,7 @@ export default function NavBar() {
 
         {/* Mobile Menu Button */}
         <button 
-          className={`md:hidden text-on-surface p-2 flex items-center justify-center ${focusRingClass}`}
+          className={`md:hidden text-on-surface p-2 flex items-center justify-center cursor-pointer ${focusRingClass}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-expanded={mobileMenuOpen}
           aria-controls="mobile-menu"
