@@ -30,9 +30,10 @@ This document details the completed implementation of the portfolio, successful 
 
 ## 🌐 MCP Browser Setup Status
 
-We have verified that the **Puppeteer MCP Server** (`@modelcontextprotocol/server-puppeteer`) is installed globally via NVM and successfully configured in `~/.gemini/settings.json`:
+We have verified that the **Puppeteer MCP Server** (`@modelcontextprotocol/server-puppeteer`) is installed globally via NVM and successfully configured in `~/.gemini/antigravity-cli/mcp_config.json`:
 
 ```json
+{
   "mcpServers": {
     "puppeteer": {
       "command": "/Users/jonathan.clarke/.nvm/versions/node/v24.14.0/bin/node",
@@ -41,6 +42,7 @@ We have verified that the **Puppeteer MCP Server** (`@modelcontextprotocol/serve
       ]
     }
   }
+}
 ```
 
 The CLI successfully locates and connects to the server (running `gemini mcp list` in the command-line returns `✓ puppeteer: Connected`).
