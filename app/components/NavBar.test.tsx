@@ -63,4 +63,15 @@ describe("NavBar Component", () => {
     expect(experienceLink).toHaveClass("text-primary");
     expect(experienceLink).toHaveAttribute("href", "#");
   });
+
+  it("renders the mobile menu button on non-index routes", () => {
+    render(
+      <MemoryRouter initialEntries={["/video"]}>
+        <NavBar />
+      </MemoryRouter>
+    );
+
+    const button = screen.getByRole("button", { name: /Open main menu/i });
+    expect(button).toBeInTheDocument();
+  });
 });

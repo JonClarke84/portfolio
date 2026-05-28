@@ -82,13 +82,13 @@ export default function NavBar() {
 
         {/* Mobile Menu Button */}
         <button 
-          className={`md:hidden text-on-surface p-2 ${focusRingClass}`}
+          className={`md:hidden text-on-surface p-2 flex items-center justify-center ${focusRingClass}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-expanded={mobileMenuOpen}
           aria-controls="mobile-menu"
           aria-label={mobileMenuOpen ? "Close main menu" : "Open main menu"}
         >
-          <span className="material-symbols-outlined" aria-hidden="true">
+          <span className="material-symbols-outlined text-[24px]" aria-hidden="true">
             {mobileMenuOpen ? "close" : "menu"}
           </span>
         </button>
